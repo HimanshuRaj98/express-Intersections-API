@@ -2,13 +2,14 @@ import express, { Express, Request, Response } from 'express';
 import bodyParser from "body-parser";
 import dotenv from 'dotenv';
 import { LineCheckContext, UserContext } from './context';
-import morgan from 'morgan';
+import morgan, { token } from 'morgan';
 import { GeoJSONRouter, UserRouter } from './routes';
 
 dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT;
+
 // PayloadTooLargeError
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}))
@@ -26,5 +27,5 @@ app.use('/api/v1', GeoJSONRouter)
 app.use('/auth', UserRouter)
 
 app.listen(port, () => {
-  console.log(`⚡️ [server]: Server is running at http://localhost:${port}`);
+  console.log(` [server]: Server is running at http://localhost:${port}`);  
 });

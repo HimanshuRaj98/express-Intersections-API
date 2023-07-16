@@ -37,7 +37,7 @@ class UserContext {
                         accessToken: sign({
                             username: user.username,
                             name: user.name
-                        }, process.env.JWT_SECRET!, { expiresIn: '1h' })
+                        }, process.env.JWT_SECRET!, { expiresIn: '10h' })
                     }
                 }
             ]

@@ -44,3 +44,4 @@ The server defines the following routes:
 ## Starting the Server
 To start the server, run the appropriate command (e.g., `npx ts-node dist/index.js`) in the project's root directory. The server will listen on the port specified in the environment variables.
 
+
