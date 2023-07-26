@@ -12,6 +12,10 @@ This is the README file for an Express server application. The server is built u
 - [Routes](#routes)
 - [Starting the Server](#starting-the-server)
 
+## Deployed Server Link :
+- www.s.id/mapup
+- Use Above Link To Test The Api Using Postman 
+
 ## Dependencies
 The following dependencies are used in this project:
 - Express: Fast, unopinionated web framework for Node.js
